@@ -30,13 +30,16 @@
 #   define GLUT_API      extern
 #endif
 
-#if defined(_MACOSX)
-#   include <OpenGL/gl.h>
-#   include <OpenGL/glu.h>
-#else
-#   include <GL/gl.h>  // must be included after windows.h
-#   include <GL/glu.h>
-#endif
+//#if defined(_MACOSX)
+//#   include <OpenGL/gl.h>
+//#   include <OpenGL/glu.h>
+//#else
+//#   include <GL/gl.h>  // must be included after windows.h
+//#   include <GL/glu.h>
+//#endif
+
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
 
 #ifdef __cplusplus
 extern "C" {

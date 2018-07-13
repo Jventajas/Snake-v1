@@ -847,7 +847,7 @@ static void leaveFullscreenMode(_GLFWwindow* window)
 }
 
 // Decode a Unicode code point from a UTF-8 stream
-// Based on cutef8 by Jeff Bezanson (Public Domain)
+// Based on cutef8 by Jeff Bezanson (Public domain)
 //
 #if defined(X_HAVE_UTF8_STRING)
 static unsigned int decodeUTF8(const char** s)

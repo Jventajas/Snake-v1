@@ -13,6 +13,7 @@ include_directories(
         external/glew-1.13.0/include/
         external/assimp-3.0.1270/include/
         external/bullet-2.81-rev2613/src/
+        external/ncurses-6.1-20180707/ncurses
         src
         .
 )
@@ -33,6 +34,12 @@ add_definitions(
 add_executable(
         Snake
         src/main.cpp
+        src/game/GamePresenter.cpp
+        src/game/GameView.cpp
+        src/domain/Apple.cpp
+        src/domain/Game.cpp
+        src/domain/PoisonApple.cpp
+        src/domain/Snake.cpp
 )
 
 target_link_libraries(Snake ${ALL_LIBS})

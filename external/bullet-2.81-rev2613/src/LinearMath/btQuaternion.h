@@ -845,7 +845,7 @@ quatRotate(const btQuaternion& rotation, const btVector3& v)
 }
 
 SIMD_FORCE_INLINE btQuaternion 
-shortestArcQuat(const btVector3& v0, const btVector3& v1) // Game Programming Gems 2.10. make sure v0,v1 are normalized
+shortestArcQuat(const btVector3& v0, const btVector3& v1) // game Programming Gems 2.10. make sure v0,v1 are normalized
 {
 	btVector3 c = v0.cross(v1);
 	btScalar  d = v0.dot(v1);
